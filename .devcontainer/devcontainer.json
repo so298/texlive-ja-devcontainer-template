@@ -1,8 +1,18 @@
 {
   "name": "Latex Workshop Dev Container",
-  "image": "ghcr.io/so298/texlive-ja-devcontainer:latest",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "workspaceFolder": "/home/vscode/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspace,type=bind,consistency=cached",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode",
+      "userUid": "1000",
+      "userGid": "1000"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
