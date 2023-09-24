@@ -1,8 +1,6 @@
 {
   "name": "Latex Workshop Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "so298go/texlive-ja-devcontainer:latest",
   "workspaceFolder": "/home/vscode/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspace,type=bind,consistency=cached",
   "features": {
