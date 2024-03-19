@@ -11,11 +11,8 @@
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers-contrib/features/zsh-plugins": {
-      "plugins": 
-        "zsh-autosuggestions zsh-syntax-highlighting",
-      "omzPlugins": 
-        "https://github.com/zsh-users/zsh-autosuggestions.git https://github.com/zsh-users/zsh-syntax-highlighting.git"
-      ,
+      "plugins": "zsh-autosuggestions zsh-syntax-highlighting",
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions.git https://github.com/zsh-users/zsh-syntax-highlighting.git",
       "username": "vscode"
     }
   },
@@ -111,7 +108,10 @@
           }
         ],
         // use lualatex as default
-        "latex-workshop.latex.recipe.default": "latexmk (lualatex)"
+        "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+
+        // Enable magic comments. See https://github.com/James-Yu/LaTeX-Workshop/issues/3027
+        "latex-workshop.latex.build.forceRecipeUsage": false
       }
     }
   },
