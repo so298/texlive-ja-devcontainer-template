@@ -33,7 +33,9 @@
         "[bibtex]": {
           "editor.tabSize": 2
         },
-        "latex-workshop.latexindent.path": "/usr/local/bin/texlive/latexindent",
+        "latex-workshop.formatting.latex": "tex-fmt",
+        "latex-workshop.formatting.latexindent.path": "/usr/local/bin/texlive/latexindent",
+        "latex-workshop.formatting.tex-fmt.path": "/usr/local/bin/tex-fmt",
         "latex-workshop.latex.outDir": "out",
         "latex-workshop.latex.clean.fileTypes": [
           "*.aux",
